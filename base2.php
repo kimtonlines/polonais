@@ -24,8 +24,8 @@ function base2($piloteId, $specialeId){
      */
     $requete1 = $db1->prepare('SELECT *  FROM temps WHERE id_pilote = :id_pilote AND id_speciale = :id_speciale AND depart IS NOT NULL AND arrivee IS NOT NULL');
 
-    $requete1->bindParam('id_pilote', $piloteId);
-    $requete1->bindParam('id_speciale', $specialeId);
+    $requete1->bindParam('id_pilote', $piloteId, PDO::PARAM_INT);
+    $requete1->bindParam('id_speciale', $specialeId, PDO::PARAM_INT);
 
     $requete1->execute();
     $time = $requete1->fetch();
@@ -77,8 +77,8 @@ function base2($piloteId, $specialeId){
          */
         $requete2 = $db2->prepare('INSERT INTO temps(id_pilote, id_speciale, temps, depart, arrivee) VALUES(:id_pilote, :id_speciale, :temps, :depart, :arrivee)');
 
-        $requete2->bindParam('id_pilote', $piloteId);
-        $requete2->bindParam('id_speciale', $specialeId);
+        $requete2->bindParam('id_pilote', $piloteId, PDO::PARAM_INT);
+        $requete2->bindParam('id_speciale', $specialeId, PDO::PARAM_INT);
         $requete2->bindParam('temps', $temps);
         $requete2->bindParam('depart', $td);
         $requete2->bindParam('arrivee', $ta);
