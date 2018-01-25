@@ -9,7 +9,7 @@
  * @param $specialeId
  * @return bool
  */
-function timeRallye($piloteId, $specialeId){
+function base2($piloteId, $specialeId){
 
     /*
      * Connexion à la base de données base1
@@ -89,4 +89,4 @@ function timeRallye($piloteId, $specialeId){
     return $rallye;
 };
 
-timeRallye(14, 1);
+base2(14, 1);
