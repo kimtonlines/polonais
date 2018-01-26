@@ -64,6 +64,8 @@ function base2($piloteId, $specialeId){
     $temps =$i + $s + $ams;
 
     if ($temps) {
+
+        $tempsA = $ta.':'.$ams;
         /*
          * Connexion à la base de données base2 si la variable $temps existe
          */
@@ -81,7 +83,7 @@ function base2($piloteId, $specialeId){
         $requete2->bindParam('id_speciale', $specialeId, PDO::PARAM_INT);
         $requete2->bindParam('temps', $temps);
         $requete2->bindParam('depart', $td);
-        $requete2->bindParam('arrivee', $ta);
+        $requete2->bindParam('arrivee', $tempsA);
 
         $rallye = $requete2->execute();
     }
@@ -89,4 +91,4 @@ function base2($piloteId, $specialeId){
     return $rallye;
 };
 
-base2(14, 1);
+base2(11, 1);
