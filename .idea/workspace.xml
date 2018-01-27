@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ea49b9d-119b-49fb-9eb7-f256a3e5766b" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Polonais.iml" afterPath="$PROJECT_DIR$/.idea/Polonais.iml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/base2.php" afterPath="$PROJECT_DIR$/base2.php" />
+      <change beforePath="$PROJECT_DIR$/base1.php" afterPath="$PROJECT_DIR$/timeAll.php" />
+      <change beforePath="$PROJECT_DIR$/base2.php" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -11,6 +13,9 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -31,27 +36,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="base2.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/base2.php">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="93" column="8" lean-forward="false" selection-start-line="93" selection-start-column="8" selection-end-line="93" selection-end-column="8" />
+            <state relative-caret-position="1820">
+              <caret line="121" column="9" lean-forward="false" selection-start-line="121" selection-start-column="9" selection-end-line="121" selection-end-column="9" />
               <folding>
-                <marker date="1516960602875" expanded="true" signature="619:746" ph="SELECT * FRO... temps" />
-                <marker date="1516960602875" expanded="true" signature="2347:2472" ph="INSERT INTO temps... " />
+                <element signature="e#39#88#0#PHP" expanded="true" />
+                <marker date="1517086066780" expanded="true" signature="1220:1347" ph="SELECT * FRO... temps" />
+                <marker date="1517086066780" expanded="true" signature="2941:3040" ph="SELECT * FRO... temps" />
+                <marker date="1517086066780" expanded="true" signature="3549:3689" ph="INSERT INTO temps... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base1.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/base1.php">
+      <file leaf-file-name="timeAll.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/timeAll.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="458">
+              <caret line="61" column="19" lean-forward="true" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="19" />
               <folding>
-                <marker date="1516911811632" expanded="true" signature="369:438" ph="SELECT * FRO... temps" />
-                <marker date="1516911811632" expanded="true" signature="1606:1652" ph="UPDATE temps... " />
+                <marker date="1517086143212" expanded="true" signature="371:440" ph="SELECT * FRO... temps" />
+                <marker date="1517086143212" expanded="true" signature="1608:1654" ph="UPDATE temps... " />
               </folding>
             </state>
           </provider>
@@ -68,6 +75,8 @@
         <option value="$PROJECT_DIR$/time.php" />
         <option value="$PROJECT_DIR$/base1.php" />
         <option value="$PROJECT_DIR$/base2.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/timeAll.php" />
       </list>
     </option>
   </component>
@@ -77,12 +86,22 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/container-interop/container-interop" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/nikic/fast-route" />
+      <path value="$PROJECT_DIR$/vendor/pimple/pimple" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/slim/slim" />
+    </include_path>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="132" />
-    <option name="y" value="16" />
-    <option name="width" value="1400" />
-    <option name="height" value="864" />
+    <option name="x" value="187" />
+    <option name="y" value="44" />
+    <option name="width" value="1009" />
+    <option name="height" value="856" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -100,6 +119,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -112,7 +132,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -150,12 +169,14 @@
       <workItem from="1516908211843" duration="4411000" />
       <workItem from="1516912795934" duration="138000" />
       <workItem from="1516926588496" duration="44000" />
-      <workItem from="1516960055858" duration="546000" />
+      <workItem from="1516960055858" duration="753000" />
+      <workItem from="1516995770629" duration="2935000" />
+      <workItem from="1517080482439" duration="5664000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8032000" />
+    <option name="totallyTimeSpent" value="16838000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -167,10 +188,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="132" y="16" width="1557" height="912" extended-state="6" />
+    <frame x="187" y="44" width="1557" height="912" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26308814" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17362492" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -178,7 +199,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33026317" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -203,22 +224,32 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/base2.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1516960602875" expanded="true" signature="619:746" ph="SELECT * FRO... temps" />
-            <marker date="1516960602875" expanded="true" signature="2347:2472" ph="INSERT INTO temps... " />
-          </folding>
+        <state relative-caret-position="2366">
+          <caret line="93" column="13" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="93" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/base1.php">
+    <entry file="file://$PROJECT_DIR$/timeAll.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
-            <marker date="1516911811632" expanded="true" signature="369:438" ph="SELECT * FRO... temps" />
-            <marker date="1516911811632" expanded="true" signature="1606:1652" ph="UPDATE temps... " />
+            <marker date="1517086143212" expanded="true" signature="371:440" ph="SELECT * FRO... temps" />
+            <marker date="1517086143212" expanded="true" signature="1608:1654" ph="UPDATE temps... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="18" column="2" lean-forward="true" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+          <folding>
+            <element signature="e#39#88#0#PHP" expanded="true" />
+            <marker date="1517086066780" expanded="true" signature="1220:1347" ph="SELECT * FRO... temps" />
+            <marker date="1517086066780" expanded="true" signature="2941:3040" ph="SELECT * FRO... temps" />
+            <marker date="1517086066780" expanded="true" signature="3549:3689" ph="INSERT INTO temps... " />
           </folding>
         </state>
       </provider>
@@ -227,20 +258,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1516960602875" expanded="true" signature="619:746" ph="SELECT * FRO... temps" />
-            <marker date="1516960602875" expanded="true" signature="2347:2472" ph="INSERT INTO temps... " />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/base1.php">
+    <entry file="file://$PROJECT_DIR$/timeAll.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
-            <marker date="1516911811632" expanded="true" signature="369:438" ph="SELECT * FRO... temps" />
-            <marker date="1516911811632" expanded="true" signature="1606:1652" ph="UPDATE temps... " />
+            <marker date="1517086143212" expanded="true" signature="371:440" ph="SELECT * FRO... temps" />
+            <marker date="1517086143212" expanded="true" signature="1608:1654" ph="UPDATE temps... " />
           </folding>
         </state>
       </provider>
@@ -249,20 +277,55 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/timeAll.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
-            <marker date="1516960602875" expanded="true" signature="619:746" ph="SELECT * FRO... temps" />
-            <marker date="1516960602875" expanded="true" signature="2347:2472" ph="INSERT INTO temps... " />
+            <marker date="1517086143212" expanded="true" signature="371:440" ph="SELECT * FRO... temps" />
+            <marker date="1517086143212" expanded="true" signature="1608:1654" ph="UPDATE temps... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/base1.php">
+    <entry file="file://$PROJECT_DIR$/base2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/timeAll.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <marker date="1517086143212" expanded="true" signature="371:440" ph="SELECT * FRO... temps" />
+            <marker date="1517086143212" expanded="true" signature="1608:1654" ph="UPDATE temps... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/timeAll.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
           <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
-            <marker date="1516911811632" expanded="true" signature="369:438" ph="SELECT * FRO... temps" />
-            <marker date="1516911811632" expanded="true" signature="1606:1652" ph="UPDATE temps... " />
+            <marker date="1517086143212" expanded="true" signature="371:440" ph="SELECT * FRO... temps" />
+            <marker date="1517086143212" expanded="true" signature="1608:1654" ph="UPDATE temps... " />
           </folding>
         </state>
       </provider>
@@ -271,10 +334,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1516960602875" expanded="true" signature="619:746" ph="SELECT * FRO... temps" />
-            <marker date="1516960602875" expanded="true" signature="2347:2472" ph="INSERT INTO temps... " />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -285,24 +345,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/base1.php">
+    <entry file="file://$PROJECT_DIR$/base2.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="93" column="13" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="93" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1820">
+          <caret line="121" column="9" lean-forward="false" selection-start-line="121" selection-start-column="9" selection-end-line="121" selection-end-column="9" />
           <folding>
-            <marker date="1516911811632" expanded="true" signature="369:438" ph="SELECT * FRO... temps" />
-            <marker date="1516911811632" expanded="true" signature="1606:1652" ph="UPDATE temps... " />
+            <element signature="e#39#88#0#PHP" expanded="true" />
+            <marker date="1517086066780" expanded="true" signature="1220:1347" ph="SELECT * FRO... temps" />
+            <marker date="1517086066780" expanded="true" signature="2941:3040" ph="SELECT * FRO... temps" />
+            <marker date="1517086066780" expanded="true" signature="3549:3689" ph="INSERT INTO temps... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/base2.php">
+    <entry file="file://$PROJECT_DIR$/timeAll.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="93" column="8" lean-forward="false" selection-start-line="93" selection-start-column="8" selection-end-line="93" selection-end-column="8" />
+        <state relative-caret-position="458">
+          <caret line="61" column="19" lean-forward="true" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="19" />
           <folding>
-            <marker date="1516960602875" expanded="true" signature="619:746" ph="SELECT * FRO... temps" />
-            <marker date="1516960602875" expanded="true" signature="2347:2472" ph="INSERT INTO temps... " />
+            <marker date="1517086143212" expanded="true" signature="371:440" ph="SELECT * FRO... temps" />
+            <marker date="1517086143212" expanded="true" signature="1608:1654" ph="UPDATE temps... " />
           </folding>
         </state>
       </provider>

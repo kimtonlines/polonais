@@ -1,0 +1,12 @@
+{
+    "name": "kimt/polonais",
+    "authors": [
+        {
+            "name": "kimtonlines",
+            "email": "kimtonlines@gmail.com"
+        }
+    ],
+    "require": {
+        "slim/slim": "^3.0"
+    }
+}

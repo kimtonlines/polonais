@@ -2,7 +2,7 @@
 /*
  * Cette fonction, met le temps de tous les pilotes en milliseconde
  */
-function base1(){
+function timeAll(){
 
     $db = new PDO('mysql:host=localhost;dbname=base1', 'kimt', '1992');
     $db->exec('SET NAMES UTF8');
@@ -62,4 +62,4 @@ function base1(){
     return $rallye;
 };
 
-base1();
+timeAll();
