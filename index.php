@@ -2,9 +2,6 @@
 
 require 'vendor/autoload.php';
 
-use Psr\Http\Message\RequestInterface as Request;
-use Psr\Http\Message\ResponseInterface as Response;
-
 $app = new \Slim\App();
 
 $containerdb1 = $app->getContainer();
@@ -29,7 +26,66 @@ $containerdb2['db2'] = function () {
     return $db2;
 };
 
-$app->get('/rallye/pilote/{piloteId}/{specialeId}', function (Request $req, Response $res, $args){
+/*
+ * Met toutes les temps en milliseconde
+ */
+$app->get('/rallye/pilotes', function () {
+
+    $requete = $this->db1->query('SELECT *  FROM temps WHERE depart IS NOT NULL AND arrivee IS NOT NULL');
+
+    $timeAll = $requete->fetchAll();
+
+    foreach ($timeAll as $time) {
+
+        /*
+         * Remplace les caractères allant de 0 jsuqu'a 11 et les met au format date
+         */
+        $td = date('H:i:s', strtotime(( substr_replace( $time->depart, '', 0, 11))));
+        $ta = date('H:i:s', strtotime(( substr_replace( $time->arrivee, '', 0, 11))));
+
+        /*
+         * Met en milliseconde
+         */
+        $ams = $time->ams / 1000;
+
+        /*
+         * Met au format datetime le temps de départ et le temps d'arrivée
+         */
+        $ttd = new DateTime($td);
+        $tta = new DateTime($ta);
+
+        /*
+         * Fait la différence entre le temps de départ et le temps d'arrivée
+         */
+        $diff = $ttd->diff($tta);
+
+        /*
+         *  Met en milliseconde les minutes et les secondes de la différence
+         */
+        $i = $diff->i * 60000;
+        $s = $diff->s * 1000;
+
+        /*
+        * Additionne en milliseconde les minutes, les secondes et les millisecondes
+        */
+        $temps =$i + $s + $ams;
+
+        /*
+         * Met à jour le temps des pilotes en milliseconde
+         */
+        $requete2 = $this->db1->prepare('UPDATE temps SET temps = :temps WHERE id = :id');
+
+        $requete2->bindParam('temps', $temps);
+        $requete2->bindParam('id', $time->id);
+
+        $requete2->execute();
+    }
+});
+
+/*
+ * Met le temps du pilote dans une autre base de données en fonction de son id et de l'id de la spéciale
+ */
+$app->get('/rallye/pilotes/{piloteId}/{specialeId}', function ($args){
 
     $piloteId = $args['piloteId'];
     $specialeId = $args['specialeId'];
