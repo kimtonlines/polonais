@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  localhost
--- Généré le :  Jeu 25 Janvier 2018 à 20:25
+-- Généré le :  Sam 27 Janvier 2018 à 21:03
 -- Version du serveur :  5.7.21-0ubuntu0.16.04.1
 -- Version de PHP :  7.1.13-1+ubuntu16.04.1+deb.sury.org+1
 
@@ -30,6 +30,7 @@ CREATE TABLE `temps` (
   `id` int(11) NOT NULL,
   `id_pilote` bigint(20) DEFAULT NULL,
   `id_speciale` int(11) DEFAULT NULL,
+  `dates` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `temps` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `depart` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `arrivee` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL
@@ -96,7 +97,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT pour la table `temps`
 --
 ALTER TABLE `temps`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT pour la table `user`
 --
