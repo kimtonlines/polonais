@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ea49b9d-119b-49fb-9eb7-f256a3e5766b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/base1.sql" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/base2.sql" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -12,7 +12,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
   <component name="DatabaseView">
@@ -37,14 +37,15 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2184">
-              <caret line="84" column="2" lean-forward="true" selection-start-line="84" selection-start-column="2" selection-end-line="84" selection-end-column="2" />
+            <state relative-caret-position="521">
+              <caret line="184" column="0" lean-forward="false" selection-start-line="184" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
               <folding>
-                <marker date="1517086851196" expanded="true" signature="873:942" ph="SELECT * FRO... temps" />
-                <marker date="1517086851196" expanded="true" signature="2116:2162" ph="UPDATE temps... " />
-                <marker date="1517086851196" expanded="true" signature="2756:2883" ph="SELECT * FRO... temps" />
-                <marker date="1517086851196" expanded="true" signature="4477:4576" ph="SELECT * FRO... temps" />
-                <marker date="1517086851196" expanded="true" signature="5085:5225" ph="INSERT INTO temps... " />
+                <element signature="e#39#52#0#PHP" expanded="true" />
+                <marker date="1517087824820" expanded="true" signature="952:1021" ph="SELECT * FRO... temps" />
+                <marker date="1517087824820" expanded="true" signature="2195:2241" ph="UPDATE temps... " />
+                <marker date="1517087824820" expanded="true" signature="2864:2991" ph="SELECT * FRO... temps" />
+                <marker date="1517087824820" expanded="true" signature="4585:4684" ph="SELECT * FRO... temps" />
+                <marker date="1517087824820" expanded="true" signature="5193:5333" ph="INSERT INTO temps... " />
               </folding>
             </state>
           </provider>
@@ -84,7 +85,7 @@
       <path value="$PROJECT_DIR$/vendor/slim/slim" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="187" />
     <option name="y" value="44" />
     <option name="width" value="1009" />
@@ -158,12 +159,13 @@
       <workItem from="1516926588496" duration="44000" />
       <workItem from="1516960055858" duration="753000" />
       <workItem from="1516995770629" duration="2935000" />
-      <workItem from="1517080482439" duration="6486000" />
+      <workItem from="1517080482439" duration="7404000" />
+      <workItem from="1517148268818" duration="5000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17660000" />
+    <option name="totallyTimeSpent" value="18583000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -175,9 +177,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="187" y="44" width="1557" height="912" extended-state="6" />
+    <frame x="187" y="44" width="1557" height="912" extended-state="7" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17362492" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17561299" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -200,6 +202,32 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -208,108 +236,32 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/base2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2366">
-          <caret line="93" column="13" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="93" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/timeAll.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/base2.php" />
+    <entry file="file://$PROJECT_DIR$/timeAll.php" />
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="18" column="2" lean-forward="true" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
           <folding>
-            <marker date="1517086851196" expanded="true" signature="873:942" ph="SELECT * FRO... temps" />
-            <marker date="1517086851196" expanded="true" signature="2116:2162" ph="UPDATE temps... " />
-            <marker date="1517086851196" expanded="true" signature="2756:2883" ph="SELECT * FRO... temps" />
-            <marker date="1517086851196" expanded="true" signature="4477:4576" ph="SELECT * FRO... temps" />
-            <marker date="1517086851196" expanded="true" signature="5085:5225" ph="INSERT INTO temps... " />
+            <element signature="e#39#52#0#PHP" expanded="true" />
+            <marker date="1517087824820" expanded="true" signature="952:1021" ph="SELECT * FRO... temps" />
+            <marker date="1517087824820" expanded="true" signature="2195:2241" ph="UPDATE temps... " />
+            <marker date="1517087824820" expanded="true" signature="2864:2991" ph="SELECT * FRO... temps" />
+            <marker date="1517087824820" expanded="true" signature="4585:4684" ph="SELECT * FRO... temps" />
+            <marker date="1517087824820" expanded="true" signature="5193:5333" ph="INSERT INTO temps... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/base2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/timeAll.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/timeAll.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/timeAll.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/timeAll.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/base2.php" />
+    <entry file="file://$PROJECT_DIR$/timeAll.php" />
+    <entry file="file://$PROJECT_DIR$/base2.php" />
+    <entry file="file://$PROJECT_DIR$/timeAll.php" />
+    <entry file="file://$PROJECT_DIR$/base2.php" />
+    <entry file="file://$PROJECT_DIR$/timeAll.php" />
+    <entry file="file://$PROJECT_DIR$/base2.php" />
+    <entry file="file://$PROJECT_DIR$/timeAll.php" />
+    <entry file="file://$PROJECT_DIR$/base2.php" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/74a3f9d5-440d-4c2e-bbe3-d3f69b2f1d40/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -317,56 +269,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/base2.php">
+    <entry file="file://$PROJECT_DIR$/base2.php" />
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/timeAll.php" />
+    <entry file="file://$PROJECT_DIR$/base2.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-468">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/autoload.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="93" column="13" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="93" selection-end-column="13" />
-          <folding />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/composer.lock">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7840">
+        <state relative-caret-position="-7590">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/timeAll.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base2.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-468">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2184">
-          <caret line="84" column="2" lean-forward="true" selection-start-line="84" selection-start-column="2" selection-end-line="84" selection-end-column="2" />
+        <state relative-caret-position="521">
+          <caret line="184" column="0" lean-forward="false" selection-start-line="184" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
           <folding>
-            <marker date="1517086851196" expanded="true" signature="873:942" ph="SELECT * FRO... temps" />
-            <marker date="1517086851196" expanded="true" signature="2116:2162" ph="UPDATE temps... " />
-            <marker date="1517086851196" expanded="true" signature="2756:2883" ph="SELECT * FRO... temps" />
-            <marker date="1517086851196" expanded="true" signature="4477:4576" ph="SELECT * FRO... temps" />
-            <marker date="1517086851196" expanded="true" signature="5085:5225" ph="INSERT INTO temps... " />
+            <element signature="e#39#52#0#PHP" expanded="true" />
+            <marker date="1517087824820" expanded="true" signature="952:1021" ph="SELECT * FRO... temps" />
+            <marker date="1517087824820" expanded="true" signature="2195:2241" ph="UPDATE temps... " />
+            <marker date="1517087824820" expanded="true" signature="2864:2991" ph="SELECT * FRO... temps" />
+            <marker date="1517087824820" expanded="true" signature="4585:4684" ph="SELECT * FRO... temps" />
+            <marker date="1517087824820" expanded="true" signature="5193:5333" ph="INSERT INTO temps... " />
           </folding>
         </state>
       </provider>

@@ -2,7 +2,11 @@
 
 require 'vendor/autoload.php';
 
-$app = new \Slim\App();
+use Slim\App;
+use Slim\Http\Request as Request;
+use Slim\Http\Response as Response;
+
+$app = new App();
 
 $containerdb1 = $app->getContainer();
 $containerdb1['db1'] = function () {
@@ -85,7 +89,7 @@ $app->get('/rallye/pilotes', function () {
 /*
  * Met le temps du pilote dans une autre base de données en fonction de son id et de l'id de la spéciale
  */
-$app->get('/rallye/pilotes/{piloteId}/{specialeId}', function ($args){
+$app->get('/rallye/pilotes/{piloteId}/{specialeId}', function (Request $req, Response $res, $args){
 
     $piloteId = $args['piloteId'];
     $specialeId = $args['specialeId'];
