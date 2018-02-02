@@ -7,11 +7,12 @@ use Slim\Http\Request as Request;
 use Slim\Http\Response as Response;
 
 $app = new App();
+$app->config('debug', true);
 
 $containerdb1 = $app->getContainer();
 $containerdb1['db1'] = function () {
 
-    $db1 = new PDO('mysql:host=localhost;dbname=base1', 'kimt', '1992');
+    $db1 = new PDO('mysql:host=192.168.40.122;dbname=Rallye', 'rally', 'rally');
     $db1->exec('SET NAMES UTF8');
     $db1->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
     $db1->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -22,7 +23,7 @@ $containerdb1['db1'] = function () {
 $containerdb2 = $app->getContainer();
 $containerdb2['db2'] = function () {
 
-    $db2 = new PDO('mysql:host=localhost;dbname=base2', 'kimt', '1992');
+    $db2 = new PDO('mysql:host=192.168.40.122;dbname=Rallye', 'rally', 'rally');
     $db2->exec('SET NAMES UTF8');
     $db2->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
     $db2->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -153,14 +154,18 @@ $app->get('/rallye/pilotes/{piloteId}/{specialeId}', function (Request $req, Res
             $m = substr_replace($m, '', 2, 3);
             $dates = $j.'/'.$m.'/'.$a;
 
-            $requete = $this->db2->prepare('SELECT *  FROM temps WHERE id_pilote = :id_pilote AND id_speciale = :id_speciale AND dates = :dates');
+            // $requete = $this->db2->prepare('SELECT *  FROM temps WHERE id_pilote = :id_pilote AND id_speciale = :id_speciale AND dates = :dates');
+            $requete = $this->db2->prepare('SELECT *  FROM temps WHERE id_pilote = :id_pilote AND id_speciale = :id_speciale');
+
 
             $requete->bindParam('id_pilote', $piloteId, PDO::PARAM_INT);
             $requete->bindParam('id_speciale', $specialeId, PDO::PARAM_INT);
-            $requete->bindParam('dates', $dates);
+            // $requete->bindParam('dates', $dates);
 
             $requete->execute();
             $temsPilote = $requete->fetch();
+            // var_dump($temsPilote);
+            // return $temsPilote;
 
            if ($temsPilote) {
                return false;
@@ -168,11 +173,13 @@ $app->get('/rallye/pilotes/{piloteId}/{specialeId}', function (Request $req, Res
                /*
            * Insertion des données dans la base de données base2
            */
-               $requete2 = $this->db2->prepare('INSERT INTO temps(id_pilote, id_speciale, dates, temps, depart, arrivee) VALUES(:id_pilote, :id_speciale, :dates, :temps, :depart, :arrivee)');
+               // $requete2 = $this->db2->prepare('INSERT INTO temps(id_pilote, id_speciale, dates, temps, depart, arrivee) VALUES(:id_pilote, :id_speciale, :dates, :temps, :depart, :arrivee)');
+               $requete2 = $this->db2->prepare('INSERT INTO temps(id_pilote, id_speciale, temps, depart, arrivee) VALUES(:id_pilote, :id_speciale,  :temps, :depart, :arrivee)');
+
 
                $requete2->bindParam('id_pilote', $piloteId, PDO::PARAM_INT);
                $requete2->bindParam('id_speciale', $specialeId, PDO::PARAM_INT);
-               $requete2->bindParam('dates', $dates);
+               // $requete2->bindParam('dates', $dates);
                $requete2->bindParam('temps', $temps);
                $requete2->bindParam('depart', $td);
                $requete2->bindParam('arrivee', $tempsA);
