@@ -7,7 +7,7 @@ use Slim\Http\Request as Request;
 use Slim\Http\Response as Response;
 
 $app = new App();
-$app->config('debug', true);
+// $app->config('debug', true);
 
 $containerdb1 = $app->getContainer();
 $containerdb1['db1'] = function () {
@@ -82,6 +82,67 @@ $app->get('/rallye/pilotes', function () {
 
         $requete2->bindParam('temps', $temps);
         $requete2->bindParam('id', $time->id);
+
+        $requete2->execute();
+    }
+});
+
+/*
+ *  test de daniel sur les push dans l'autre bd
+ *  la seul diff avec l'autre route c'est le S a la fin de piloteS
+ */
+
+$app->get('/rallye/pilote/{piloteId}/{specialeId}', function (Request $req, Response $res, $args) {
+  $piloteId = $args['piloteId'];
+  $specialeId = $args['specialeId'];
+
+    $requete = $this->db1->query('SELECT *  FROM temps WHERE depart IS NOT NULL AND arrivee IS NOT NULL');
+
+    $timeAll = $requete->fetchAll();
+
+    foreach ($timeAll as $time) {
+
+        /*
+         * Remplace les caractères allant de 0 jsuqu'a 11 et les met au format date
+         */
+        $td = date('H:i:s', strtotime(( substr_replace( $time->depart, '', 0, 11))));
+        $ta = date('H:i:s', strtotime(( substr_replace( $time->arrivee, '', 0, 11))));
+
+        /*
+         * Met en milliseconde
+         */
+        $ams = $time->ams / 1000;
+
+        /*
+         * Met au format datetime le temps de départ et le temps d'arrivée
+         */
+        $ttd = new DateTime($td);
+        $tta = new DateTime($ta);
+
+        /*
+         * Fait la différence entre le temps de départ et le temps d'arrivée
+         */
+        $diff = $ttd->diff($tta);
+
+        /*
+         *  Met en milliseconde les minutes et les secondes de la différence
+         */
+        $i = $diff->i * 60000;
+        $s = $diff->s * 1000;
+
+        /*
+        * Additionne en milliseconde les minutes, les secondes et les millisecondes
+        */
+        $temps =$i + $s + $ams;
+
+        /*
+         * Met à jour le temps des pilotes en milliseconde
+         */
+        $requete2 = $this->db1->prepare('UPDATE temps SET temps = :temps WHERE id_pilote = :id_pilote AND id_speciale = :id_speciale');
+
+        $requete2->bindParam('temps', $temps);
+        $requete2->bindParam('id_pilote', $piloteId);
+        $requete2->bindParam('id_speciale', $specialeId);
 
         $requete2->execute();
     }
